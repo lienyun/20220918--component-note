@@ -4,7 +4,7 @@
     <hr>
     <MyCom>
       <!-- 這裡輸入的東西就會被填充到MyCom.vue的slot中 -->
-      <p>SLOT</p>
+      
     </MyCom> 
   </div>
 </template>
