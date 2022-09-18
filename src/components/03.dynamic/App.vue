@@ -1,15 +1,15 @@
 <template>
   <div>
     <h1 class="mb-4">App</h1>
-    
+
 
     <button type="button" class="btn btn-primary" @click="comName='MyHome'">Home</button>
     <button type="button" class="btn btn-info ml-2" @click="comName='MyMovie'">Movie</button>
     <hr>
-<!-- 
-    <MyHome />
-    <MyMovie /> -->
-    <component :is="comName"></component>
+    <keep-alive>
+      <component :is="comName"></component>
+    </keep-alive>
+
   </div>
 </template>
 

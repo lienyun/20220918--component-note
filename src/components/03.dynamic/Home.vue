@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h3>Home</h3>
-    <hr>
+    <h3>Home --- {{ count }}</h3>
+    <button type="button" class="btn btn-primary" @click="count+=1">+1</button>
+    
 
     
   </div>
@@ -13,8 +14,11 @@
     export default {
       name: "MyHome",
       data() {
-        
+        return {
+          count: 0
+        }
       },
+      
       
 
     }
