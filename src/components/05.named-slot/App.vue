@@ -3,16 +3,16 @@
     <h1>App</h1>
     <hr>
     <MyArticle>
-      <template v-slot:header>
+      <template #header>
         <h1>登 鸛 鵲 樓</h1>
       </template>
 
-      <template v-slot:default>
+      <template #default>
         <p>白日依山盡，黃河入海流。</p>
         <p>欲窮千里目，更上一層樓。</p>
       </template>
 
-      <template v-slot:footer>
+      <template #footer>
         <p>作者:王之渙</p>
       </template>
     </MyArticle>
