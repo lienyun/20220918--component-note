@@ -3,8 +3,10 @@
     <h1>App</h1>
     <hr>
     <MyTest>
-      <template v-slot:default="scope">
-        <p>{{ scope.info.address }}</p>
+      <template #default="{msg, info}">
+        <p>{{ msg }}</p>
+        <p>{{ info.address }}</p>
+
       </template>
     </MyTest>
   </div>
