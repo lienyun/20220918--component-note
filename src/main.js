@@ -19,4 +19,8 @@ const app = createApp(App)
 app.directive('focus', (el) => {
   el.focus()
 })
+
+app.directive('color', (el, binding) => {
+  el.style.color = binding.value
+})
 app.mount('#app')
