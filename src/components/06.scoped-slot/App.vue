@@ -9,11 +9,22 @@
 
       </template>
     </MyTest>
+    <hr>
+    <MyTable>
+      <template #default="{user}">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>
+          <input type="checkbox" :checked="user.state">
+        </td>
+      </template>
+    </MyTable>
   </div>
 </template>
 
 <script>
 import MyTest from './MyTest.vue'
+import MyTable from './MyTable.vue'
 
 export default {
   name: "MyApp",
@@ -24,6 +35,7 @@ export default {
   },
   components: {
     MyTest,
+    MyTable
   }
 }
 </script>
