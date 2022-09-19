@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>App</h1>
+
+    <input type="text" class="form-control" v-focus>
+
     <hr>
     <MyHome></MyHome>
   </div>
